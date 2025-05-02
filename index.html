@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+<script>
+  
+  var cantidad = prompt("¿Cuántas mascotas tienes?");
+  cantidad = parseInt(cantidad); 
+
+  switch (cantidad) {
+    case 0:
+      document.write("<p>Usted no tiene mascotas</p>");
+      document.write("<img src='https://static.vecteezy.com/system/resources/previews/011/453/403/large_2x/crying-emoji-face-character-free-vector.jpg' alt='tristeza' width='1000'>");
+      break;
+
+    case 1:
+      var nombre1 = prompt("¿Cómo se llama tu mascota?");
+      document.write("<p>Usted tiene una mascota y se llama <strong>" + nombre1 + "</strong>.</p>");
+      break;
+
+    case 2:
+      var nombre2a = prompt("¿Cómo se llama la primera mascota?");
+      var nombre2b = prompt("¿Cómo se llama la segunda mascota?");
+      document.write("<p>Usted tiene dos mascotas y se llaman <strong>" + nombre2a + "</strong> y <strong>" + nombre2b + "</strong>.</p>");
+      break;
+
+    default:
+      document.write("<p>Tienes más de 2 mascotas</p>");
+      break;
+  }
+</script>
+
+</body>
+</html>
+</body>
+</html>
